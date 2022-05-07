@@ -1,0 +1,219 @@
+main {
+    section {
+        margin-bottom: 90px;
+    }
+}
+
+/* Popular products */
+.titleBar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    .saleButton {
+        color: #12283F;
+        background-color: $solidWhite;;
+        padding: 9px 14px;
+        line-height: 10px;
+        &:hover {
+            color: $solidWhite;
+            background-color: #12283F;
+        }
+    }
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.productImgContainer{
+    width: 33.33%;
+    text-align: center;
+    img {
+        border-radius: 5%;
+        margin: 24px;
+        width: calc(100% - 48px);
+    }
+    .popularProduct {
+        min-width: 303px;
+    }
+    .productWriteUp{
+        font-size: 0.8rem;
+        text-align: left;
+        padding: 0 20px;
+        margin-bottom: 0;
+    }
+
+}
+
+.dwNewsletter {
+    background-image: url(../assets/drumsAnimated.png);
+    background-position-y: 30%;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    left: -3.5%;
+    
+    .newsletterContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 20px;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: rgba(223, 200, 200, 0.8);
+        // padding: 40px 150px;
+        position: absolute;
+        min-width: 10%;
+        top: 30%;
+        left: 8.5%;
+        
+        h5 {
+            // margin-bottom: 0;
+            text-align: center;
+        }
+        h3 {
+            line-height: 2rem;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        p {
+            font-size: 0.9rem;
+            text-align: center;
+        }
+        button {
+            color: #12283F;
+            background-color: $solidWhite;;
+            padding: 26px 14px;
+            line-height: 10px;
+            &:hover {
+            color: $solidWhite;
+            background-color: #12283F;
+        }
+           
+        }
+        
+    }
+}
+
+/* Categories */
+.categoryGallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+   
+    
+    .items {
+        padding: 5px;
+        margin: 50px 25px 25px;
+        border-radius: 20px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px transparent solid;
+        h3 {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+        img {
+            width: 100%;
+            border-radius: 20px;
+            margin: 0 auto 20px auto;
+        }
+        transition: 0.2s ease;
+        &:hover{
+            transform: scale(0.99);
+            border: 2px $primary solid;
+        }
+        &:focus{
+            transform: scale(0.99);
+            border: 2px  $primary solid;
+        }
+    }
+    .itemOne{
+        background-color: rgba(98, 105, 97);
+    }
+    .itemTwo{
+        background-color: #E8BE72;
+    }
+    .itemThree{
+        background-color: #E0C6A6;
+    }
+    .itemFour{
+        background-color: #D3D2CB;
+        
+    }
+}
+
+/* Gallery */
+.gallery {
+    background-color: $solidWhite;
+    padding:  0;
+    margin-bottom: 100px;
+    .catalog {
+        display: block;
+        font-size: 2rem;
+        text-align: center;
+        line-height: 2.5rem;
+        border: 2px solid gray; 
+        border-radius: 20px;
+        padding: 5px 0 20px 0;
+        transition: 0.3s; 
+        &:hover {
+            color: #12283F;
+            border: 2px solid #12283F; 
+            background-color: rgba(223, 200, 200, 0.8);
+            -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #12283F;
+        }
+    }
+}
+.galleryItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .item{
+        width: 239px;
+        
+        img{
+            height: 73%;
+            width: 100%;
+            display: block;
+            border: transparent solid 3px;
+            border-radius: 20px;
+            transition: 0.3s;  
+            &:hover {
+            border: #12283F solid 3px;
+            }
+        }
+        .itemText {
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.25rem;
+            text-align: center;
+            width: 239px;
+            transition: 0.3s; 
+            border: 2px solid transparent;  
+            border-radius: 20px;
+            &:hover {
+                color: #12283F;
+                border: 2px solid #12283F;; 
+                background-color: rgba(223, 200, 200, 0.8);;
+            }
+        }
+        h4.drumWear {
+            
+            margin-bottom: 0;
+            }
+    }
+}

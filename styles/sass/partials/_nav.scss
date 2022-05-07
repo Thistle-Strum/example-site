@@ -1,0 +1,138 @@
+.announcements {
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+}
+
+.navBar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+    background-color: $solidWhite;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+    }
+ 
+    label {
+        cursor: pointer;
+    }
+    .searchCart {
+        display: flex;
+        .shoppingCart {
+            // border: $primary 2px solid;
+            border-radius: 20px;
+            padding: 14px 10px 7px 10px;
+            &:hover {
+                color: white;
+                background-color: $primary;;
+            }
+ 
+        }
+        .searchIcon,
+        .bag {
+            margin-right: 15px;
+        }
+    }
+    a {
+        display: flex;
+    }
+    .logo{
+        margin-left: 60px;
+    }
+    .counter{
+        display: flex;
+        align-items: center;
+        p {
+            width: 24px;
+            height: 24px;
+            background-color:$primary;
+            color: $solidWhite;
+            text-align: center;
+            border-radius: 50%;
+        }
+    }
+}
+
+.menuIcon {
+    padding-top: 17px;
+}
+
+.slideOutNav{
+    padding: 35px 50px;
+    border-right: 1px solid $secondary;
+    width: 100%;
+    max-width: 506px;
+    height: 100vh;
+    background-color: rgba(18, 40, 63, 1);
+    color: $solidWhite;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -506px;
+    z-index: 20;
+    transition: 0.75s;
+    h2 {
+        color: white;
+    }
+    .buttonContainer {
+        display: flex;
+        justify-content: flex-end;
+        button {
+            border: none;
+            font-size: 1.2rem;
+            font-weight: normal;
+            font-family: $bodyFont;
+            color: $solidWhite;
+            background-color: transparent;
+            padding: 10px 0 10px 20px;
+            &:hover {
+                color:#E8BE72;
+            }
+        }
+    }
+    hr {
+        width: 100%;
+        height: 2px;
+        margin: 36px 0;
+        background-color: $solidWhite;
+    }
+    .mainMenu {
+        a {
+            display: block;
+            font-family: "Young Serif";
+            font-size: 1.3rem;
+            line-height: 2.5rem;
+            color: rgba(255, 255, 255, 1);
+        
+            &:hover {
+                color: #E8BE72;
+            }
+            &:focus {
+                color: #E8BE72;
+            }
+        }
+    }
+    .lower { 
+        li a {
+            text-align: center;
+        }
+        a {
+            font-family: "Jakarta Sans";
+            font-size: 0.8rem;
+            text-align: center;
+            font-weight: bold;
+            line-height: 1.5rem;
+            color: rgba(255, 255, 255, 0.5);
+            &:hover {
+                color: #E8BE72;
+            }
+            &:focus {
+                color: #E8BE72;
+            }
+        }
+    }
+}

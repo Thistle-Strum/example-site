@@ -1,0 +1,404 @@
+/* 1000px screen-size devices and smaller */
+@media (max-width: 1180px) {
+    .dwNewsletter .newsletterContainer {
+        top: 34%;
+    }
+}
+
+@media (max-width: 1064px){
+    header {
+        .headerImgContainer {
+            img {
+                height: 100vh;
+                object-fit: cover;
+                display: block;
+            }
+        }
+    }
+
+    .categoryGallery {
+        .items {
+            padding: 25px;
+        }
+    }
+
+    .galleryItems {
+        justify-content: center;
+        .item {
+            width: calc(35% - 20px);
+            margin: 10px;
+        }
+        .itemText {
+            margin: 0 auto;
+            margin-bottom: 20px
+        }
+    }
+
+    .guarantees {
+        .shopOptions {
+            justify-content: space-between;
+        }
+        .guaranteeContainer {
+            width: calc(45% - 40px);
+            margin: 0 20px 40px 20px;
+        }
+    }
+
+    footer {
+        .footerFlexContainer {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 100px;
+            .logo {
+                margin: 0 0 30px 0;
+            }
+            .logoLink {
+                width: 25%;
+                padding: 0;
+                margin-bottom: 55px;
+            }
+        }
+        .newsletter {
+            width: 50%;
+            margin: 0 0 60px 0;
+        }
+        .footerNav {
+            width: 80%;
+            nav {
+                ul {
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    .mapFormContainer {
+        .map{
+            width: 45%;
+        }
+    }
+    .contactForm{
+        width: calc(55% - 50px);
+        margin-left: 50px;
+    }
+}
+
+
+@media (max-width: 930px){
+    .splash .logoContainer svg {
+        width: 50%;
+        top: 50px;
+        }
+
+    h4 {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+
+    header {
+        flex-direction:column;
+        .headerImgContainer {
+            width: 100%;
+            img {
+                max-height: 350px;
+                width: 100%;
+            }
+        }
+        .headerContent {
+            padding: 40px 0;
+            width: 100%;
+            .headerItems {
+                .item1 {
+                    h5 {
+                        text-align: center;
+                    }
+                    .item1ImgContainer img {
+                        width: 85%;
+                        }
+                }
+                .item2,  
+                .item3 {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                      
+                    .item2Text,
+                    .item3Text {
+                        text-align: center;
+                        padding: 0;
+                     } 
+                } 
+            }
+        }
+        .item1 p,
+        .item2 p,
+        .item3 p{
+            font-size: 0.8rem;
+        }
+    }
+    .titleBar {
+        margin: 20px;
+        h2 {
+        font-size: 1.5rem;
+        }
+    }
+    .saleButton {
+        font-size: 0.8rem;
+    }
+    .dwNewsletter .newsletterContainer {
+        p {
+        font-size: 0.8rem;
+        }
+        h3 {
+            font-size: 1.25rem;
+        }
+    }
+    .productImgContainer {
+        width: 50%;
+        p.productWriteUp {
+            font-size: 0.8rem;
+        }
+    }
+    .solid {
+        font-size: 0.8rem;
+    }
+    .categoryGallery {
+        justify-content: space-evenly;
+        .items {
+            padding: 15px;
+            margin: 20px 10px;
+            min-width: 320px;
+        }
+    }
+    .gallery a h3.catalog {
+        font-size: 1.5rem;
+    }
+
+    .galleryItems {
+        justify-content: center;
+        .item {
+            width: calc(40% - 20px);
+            margin: 10px;
+        }
+    }
+
+    footer {
+        .newsletter{
+            width: 70%;
+        }
+    } 
+}
+    
+@media (max-width: 700px) {
+    .splash .logoContainer svg {
+    width: 45%;
+    top: -170px;
+    }
+    .wrapper {
+        width: 95%;
+    }
+    header {
+        margin-bottom: 40px;
+        .headerContent {
+            padding: 0;
+        .headerItems .item2 p,
+        .headerItems .item3 p {
+            padding: 0 10%;
+            text-align: left;
+            }
+        .headerItems .item2 {
+            .item2ImgContainer {     
+                margin-bottom: 0px;
+            img {
+                width: 80%;
+                }
+            }
+        }    
+        .item3 {
+            h5 {
+            line-height: 1.5rem;
+            }
+            .item3ImgContainer img {
+                width: 80%;
+                }
+            }
+        }
+    }
+    .titleBar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dwNewsletter .newsletterContainer {
+        width: 90%;
+        h3 {
+            line-height: 1.5rem;
+        }
+    }
+    .galleryItems { 
+        .item {
+            width: calc(51% - 20px);
+            margin: 10px;
+        }
+    }
+}
+/* 500px screen-size devices and smaller */
+@media (max-width: 500px){
+    .splash .logoContainer svg {
+        width: 75%;
+        top: -55px;
+    }
+    .navBar .logo {
+        margin-left: 0;
+    }
+    .wrapper {
+        width: 97%;
+    }
+    .menuIcon {
+        padding-left:20px;
+    }
+    h3 {
+        font-size: 2.2rem;
+        text-align: center;
+
+    }
+    header {
+        margin-bottom: 40px;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+    
+    .announcements {
+        display: none;
+    }
+
+    .navBar {
+        // .wrapper {
+        //     flex-direction: column;
+        //     align-items: center;
+        // }
+        input[type=checkbox] {
+            align-self: flex-start;
+        }
+        label {
+            align-self: flex-start;
+        }
+        // .logo {
+        //     margin: 10px 0 20px 0;
+        // }
+    }
+
+    .slideOutNav{
+        width: 100%;
+        .mainMenu {
+            a {
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    h3 {
+        font-size: 1.5rem;
+      }
+    .titleBar {
+        button {
+            align-self: center;
+        }
+    }
+    .productImgContainer {
+        width: 100%;
+    }
+    .drums p {
+        text-align: center;
+    }
+    .categoryGallery {
+        .items {
+            width: 100%;
+            padding: 30px;
+            margin: 40px 0 0 0;
+        }
+    }
+    .galleryItems {
+        .item {
+            width: 100%;
+        }
+    }
+    main section {
+        margin-bottom: 40px;
+    }
+    .gallery {
+        margin-bottom: 0;
+        h5 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        a h3.catalog {
+            font-size: 1.1rem;
+            line-height: 1.25;
+            padding-top: 15px;
+            }
+        } 
+    .guarantees {
+        .shopOptions {
+            flex-direction: column;
+            align-items: center;
+        }
+        .guaranteeContainer {
+            width: 85%;
+            margin: 0 0 50px 0;
+        }
+    }
+
+    footer {
+        .footerFlexContainer {
+            margin-bottom: 60px; 
+            
+            a.logoLink  {
+                width: 50%;
+            }
+        }
+        .footerNav {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                ul {
+                    margin-bottom: 24px;
+                    width: 100%;
+                }
+            }
+        } 
+        .social {
+            flex-direction: column;
+            align-items: center;
+        }
+        .socialIcons {
+            margin-bottom: 30px;
+        }
+    } 
+}
+
+@media (max-width: 330px) {
+    h3 {
+        font-size: 1.15rem;
+      }
+      .titleBar h2 {
+        font-size: 1.2rem;
+      }
+      .categories {
+        h2 {
+          font-size: 1.2rem
+        }
+        p {
+            text-align: center;
+            }
+        }
+   .catalog {
+       padding: 0 10%;
+        h3  {
+            font-size: 0.75rem;
+        }
+   }
+}
+   
